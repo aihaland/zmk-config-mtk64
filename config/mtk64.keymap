@@ -38,6 +38,22 @@
 };
 
 / {
+    macros {
+        LANG2_LAYER0: LANG2_LAYER0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LANGUAGE_2>;
+            label = "LANG2_LAYER0";
+        };
+
+        LANG1_LAYER0: LANG1_LAYER0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LANG1>;
+            label = "LANG1_LAYER0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
